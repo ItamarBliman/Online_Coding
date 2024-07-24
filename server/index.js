@@ -9,7 +9,12 @@ require("dotenv").config();
 const app = express();
 const server = http.createServer(app);
 
-app.use(cors());
+// CORS configuration
+app.use(
+  cors({
+    origin: "https://extraordinary-empathy-production.up.railway.app",
+  })
+);
 app.use(express.json());
 
 // Connect to MongoDB
@@ -21,10 +26,18 @@ mongoose
   .then(() => console.log("MongoDB connected"))
   .catch((err) => console.error("MongoDB connection error:", err));
 
-// Routes
+// API routes
 app.use("/api/codeblocks", codeblockRoutes);
 
+// WebSocket setup
 setupSocket(server);
+
+// Serve static files if needed (not typically required if deploying client separately)
+app.use(express.static(path.join(__dirname, "client/build")));
+
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname + "/client/build/index.html"));
+});
 
 const PORT = process.env.PORT || 3001;
 server.listen(PORT, () => {
