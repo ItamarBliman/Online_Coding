@@ -6,6 +6,7 @@ const BASE_URL = process.env.REACT_APP_API_URL || "http://localhost:3001";
 // Fetch code blocks from the server
 export const fetchCodeBlocks = async () => {
   try {
+    console.log("This is to check the BASE_URL", BASE_URL);
     const response = await axios.get(`${BASE_URL}/api/codeblocks`);
     return response.data;
   } catch (error) {

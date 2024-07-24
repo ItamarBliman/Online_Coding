@@ -13,7 +13,7 @@ const server = http.createServer(app);
 // CORS configuration
 app.use(
   cors({
-    origin: "https://extraordinary-empathy-production.up.railway.app",
+    origin: "https://extraordinary-empathy-production.up.railway.app:8080",
   })
 );
 app.use(express.json());
