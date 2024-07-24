@@ -1,0 +1,204 @@
+/* Global Styles */
+body {
+  font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS",
+    sans-serif;
+  background-color: #dfdfdf;
+  color: #333; /* Dark gray text for readability */
+  margin: 0;
+  padding: 0;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Buttons */
+button {
+  background-color: #4caf50; /* Green background */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="number"],
+input[type="email"],
+textarea {
+  width: 30%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border-color: #4caf50; /* Highlight border color on focus */
+}
+
+/* Card */
+.card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+/* Headers */
+h1,
+h2,
+h3,
+h4 {
+  margin-left: 20px; /* Add some space to the left of headers */
+  color: #4caf50; /* Use the same green for headers */
+  font-weight: bold; /* Bold font for headers */
+  margin-bottom: 10px; /* Add space below headers */
+  text-align: center;
+  width: 30%;
+}
+
+h1 {
+  font-size: 36px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Subtle shadow for h1 */
+  border-bottom: 5px solid #4caf50; /* Add bottom border to h1 */
+  padding-bottom: 10px; /* Padding for separation */
+  margin-top: 20px;
+}
+
+h2 {
+  font-size: 28px;
+  border-bottom: 1px solid #4caf50;
+  padding-bottom: 8px;
+}
+
+h3 {
+  font-size: 24px;
+  color: #2e7d32; /* Slightly darker green for h3 */
+}
+
+h4 {
+  font-size: 20px;
+  color: #388e3c; /* Even darker green for h4 */
+}
+
+/* Links */
+a {
+  color: #1e90ff; /* DodgerBlue for links */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Navigation */
+.navbar {
+  background-color: #4caf50;
+  padding: 10px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 0 10px;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* List Styles */
+ul {
+  list-style-type: none; /* Remove default bullet points */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+li {
+  background-color: #f4f4f4; /* Light background for list items */
+  border: 1px solid #ddd; /* Light border for list items */
+  border-radius: 4px; /* Rounded corners */
+  padding: 10px; /* Padding inside list items */
+  margin: 20px 20px; /* Space above and below list items */
+}
+
+/* Optional: Add styles for list item hover effect */
+li:hover {
+  background-color: #afafaf; /* Slightly darker background on hover */
+}
+
+p {
+  margin: 20px; /* Margin for paragraphs */
+}
+
+/* MentorControls specific styles */
+.mentor-controls {
+  margin: 0 20px; /* Add margin to the left and right */
+  padding: 20px; /* Padding inside the component */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  max-width: 30%; /* Max width for the component */
+}
+
+.mentor-controls p {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333; /* Darker text color for contrast */
+}
+
+.mentor-controls textarea {
+  width: 100%; /* Full width inside the container */
+  height: 100px; /* Height of the textarea */
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  resize: vertical; /* Allow vertical resize */
+  box-sizing: border-box; /* Include padding in width/height */
+  margin-bottom: 10px; /* Space between textarea and button */
+}
+
+.mentor-controls button {
+  display: block; /* Make button a block element */
+  width: 100%; /* Full width button */
+  padding: 10px 0; /* Vertical padding */
+  font-size: 16px;
+  background-color: #4caf50; /* Bright green color */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center; /* Center text inside button */
+}
+
+.mentor-controls button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
