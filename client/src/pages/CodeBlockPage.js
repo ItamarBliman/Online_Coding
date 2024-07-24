@@ -7,7 +7,9 @@ import HintRequest from "../components/HintRequest";
 import MentorControls from "../components/MentorControls";
 import RoleDisplay from "../components/RoleDisplay";
 
-const socket = io("http://localhost:3001");
+// src/pages/CodeBlockPage.js
+const SOCKET_URL = process.env.REACT_APP_SOCKET_URL || "http://localhost:3001";
+const socket = io(SOCKET_URL);
 
 // CodeBlockPage component definition
 const CodeBlockPage = () => {
