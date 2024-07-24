@@ -31,3 +31,16 @@ This application is designed to help Tom, a professional JavaScript lecturer, to
 - Server: Node.js with Express
 - Database: Non-Relational (e.g., MongoDB)
 - WebSocket: Socket.io for real-time communication
+
+Lobby Page:
+<img width="1430" alt="Screenshot 2024-07-24 at 6 32 53 PM" src="https://github.com/user-attachments/assets/22faa376-e412-48c6-a176-235651122cf6">
+
+Mentor Code Page:
+
+![Screenshot 2024-07-24 at 7 06 25 PM](https://github.com/user-attachments/assets/46f7eb29-bec1-4f84-82cd-20ec45697bbc)
+
+Student Code Page:
+![Screenshot 2024-07-24 at 7 06 50 PM](https://github.com/user-attachments/assets/eb117c73-6457-4e86-b08d-0f28932b8a57)
+
+
+
