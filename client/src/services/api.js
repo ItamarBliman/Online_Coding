@@ -1,7 +1,7 @@
 import axios from "axios";
 
 // Define the base URL for the API
-const BASE_URL = process.env.REACT_APP_API_URL || "http://localhost:3001";
+const BASE_URL = process.env.REACT_APP_SOCKET_URL || "http://localhost:3001";
 
 // Fetch code blocks from the server
 export const fetchCodeBlocks = async () => {
