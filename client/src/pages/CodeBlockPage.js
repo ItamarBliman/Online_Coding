@@ -27,7 +27,7 @@ const CodeBlockPage = () => {
   // Fetch code block data and set up socket event listeners
   useEffect(() => {
     axios
-      .get(`/api/codeblocks/${id}`)
+      .get(`${SOCKET_URL}/api/codeblocks/${id}`)
       .then((response) => {
         setCode(response.data.code);
         setCodeBlockName(response.data.name);
